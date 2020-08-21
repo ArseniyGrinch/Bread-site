@@ -1,0 +1,61 @@
+.header
+   padding-top: 24px
+   &__inner
+      display: flex
+      justify-content: space-between
+      align-items: center
+   &__logo
+      display: flex
+      justify-content: center
+      align-items: center
+
+      background: url(../img/header/background.svg)
+      background-position: center
+      background-size: 100%
+      background-repeat: no-repeat
+
+      width: 166px
+      height: 50px
+      h1
+         font-family: primary-font
+         line-height: 18px
+         color: $primary-color
+   &__nav
+      display: flex
+      align-items: center
+      a
+         margin-left: 64px
+         &:first-child
+            margin-left: 0
+         &:last-child
+            margin-right: 64px
+   &__cart
+      background: url(../img/header/cart.svg)
+      background-position: center
+      background-size: 100%
+      background-repeat: no-repeat
+      position: relative
+
+      width: 48px
+      height: 40px
+      cursor: pointer
+      div
+         position: absolute
+         bottom: 20px
+         left: 14px
+         z-index: 5
+
+         display: flex
+         justify-content: center
+         align-items: center
+
+         font-family: secondary-font
+         font-weight: 500
+         line-height: 18px
+         color: $white
+
+         border-radius: 50%
+         background-color: $primary-color
+
+         width: 27px
+         height: 26px
