@@ -47,9 +47,17 @@
 }
 
 @font-face {
-  font-family: "primary-font";
+  font-family: "logo";
   font-display: swap;
   src: url("../fonts/Pattaya-Regular.woff") format("woff"), url("../fonts/Pattaya-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "primary-font";
+  font-display: swap;
+  src: url("../fonts/Marmelad-Regular.woff") format("woff"), url("../fonts/Marmelad-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -67,7 +75,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -133,7 +141,7 @@ button {
 }
 
 .header__logo h1 {
-  font-family: primary-font;
+  font-family: logo;
   line-height: 18px;
   color: #382513;
 }
@@ -148,7 +156,12 @@ button {
 }
 
 .header__nav a {
-  margin-left: 64px;
+  font-family: primary-font;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #382513;
+  margin-left: 59px;
 }
 
 .header__nav a:first-child {
@@ -156,7 +169,7 @@ button {
 }
 
 .header__nav a:last-child {
-  margin-right: 64px;
+  margin-right: 59px;
 }
 
 .header__cart {
@@ -211,7 +224,7 @@ button {
 }
 
 .intro__title {
-  font-family: primary-font;
+  font-family: logo;
   font-weight: normal;
   line-height: 72px;
   font-size: 64px;
@@ -257,6 +270,230 @@ button {
   position: absolute;
   right: -40px;
   top: -60px;
+}
+
+.product__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__title {
+  font-family: primary-font;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 38px;
+  color: #382513;
+}
+
+.product__nav {
+  width: 100%;
+  margin: 89px 0;
+}
+
+.product__btn {
+  font-family: primary-font;
+  font-weight: normal;
+  font-size: 24px;
+  font-weight: 18px;
+  color: #382513;
+  width: 100%;
+  max-width: 176px;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 48px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.product__btn:last-child {
+  margin-right: 0;
+}
+
+.product__btn-active {
+  color: #ffffff;
+  background: #DB8C3D;
+  -webkit-box-shadow: 0px 4px 11px #C09F7F;
+          box-shadow: 0px 4px 11px #C09F7F;
+  border: none;
+}
+
+.product__content {
+  width: 100%;
+}
+
+.product__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__item {
+  margin-right: 49px;
+  height: 100%;
+  min-height: 430px;
+}
+
+.product__item:last-child {
+  margin-right: 0;
+}
+
+.product__item:hover .product__item-active {
+  margin-top: -4%;
+  opacity: .9;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+}
+
+.product__item:hover .product__cart {
+  opacity: 1;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .15s;
+       -o-transition-duration: .15s;
+          transition-duration: .15s;
+  -webkit-transition-delay: .15s;
+       -o-transition-delay: .15s;
+          transition-delay: .15s;
+}
+
+.product__item:hover .product__cart-wrap span {
+  opacity: .99;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .18s;
+       -o-transition-duration: .18s;
+          transition-duration: .18s;
+  -webkit-transition-delay: .18s;
+       -o-transition-delay: .18s;
+          transition-delay: .18s;
+}
+
+.product__item-active {
+  position: absolute;
+  width: 100%;
+  max-width: 258px;
+  height: 100%;
+  max-height: 190px;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+  background-color: #ffffff;
+}
+
+.product__foto {
+  width: 100%;
+  max-width: 280px;
+}
+
+.product__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 17px;
+  margin-bottom: 33px;
+}
+
+.product__text h4 {
+  font-family: primary-font;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #382513;
+}
+
+.product__text span {
+  font-family: primary-font;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #9C7044;
+  margin-right: 5px;
+}
+
+.product__price {
+  font-family: primary-font;
+  font-size: 30px;
+  line-height: 30px;
+  color: #382513;
+  margin-bottom: 17px;
+}
+
+.product__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: secondary-font;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #382513;
+  border-radius: 9px;
+  position: absolute;
+  bottom: -57px;
+  z-index: 2;
+  width: 100%;
+  max-width: 253px;
+  height: 58px;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition-duration: .12s;
+       -o-transition-duration: .12s;
+          transition-duration: .12s;
+  -webkit-transition-delay: .12s;
+       -o-transition-delay: .12s;
+          transition-delay: .12s;
+}
+
+.product__cart img {
+  margin-left: 3px;
+}
+
+.product__cart-wrap {
+  position: relative;
+}
+
+.product__cart-wrap span {
+  width: 100%;
+  max-width: 253px;
+  height: 58px;
+  position: absolute;
+  bottom: -62px;
+  right: -1px;
+  z-index: 1;
+  background: #ffffff;
+  border: 1px solid #382513;
+  border-radius: 9px;
+  opacity: 0;
+  -webkit-transition-duration: .09s;
+       -o-transition-duration: .09s;
+          transition-duration: .09s;
+  -webkit-transition-delay: .09s;
+       -o-transition-delay: .09s;
+          transition-delay: .09s;
 }
 @supports (-webkit-appearance:none){
 .header__logo{background:url(../img/header/background.svg)}
