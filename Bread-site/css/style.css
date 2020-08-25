@@ -99,10 +99,12 @@ a {
   color: #382513;
 }
 
-button {
+button,
+p {
   background: none;
   border: none;
   padding: 0;
+  margin: 0;
   outline: none;
 }
 
@@ -270,6 +272,223 @@ button {
   position: absolute;
   right: -40px;
   top: -60px;
+}
+
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 541px;
+  background: #FFFAF3;
+  padding: 0 25px;
+  padding-bottom: 47px;
+  opacity: .99;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.cart__inner {
+  width: 100%;
+}
+
+.cart__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 22px;
+  margin-bottom: 33px;
+}
+
+.cart__info p {
+  font-family: primary-font;
+  font-size: 22px;
+  line-height: 22px;
+  color: #382513;
+  white-space: nowrap;
+}
+
+.cart__close {
+  font-size: 38px;
+  color: #382513;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.cart__info-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart__info-wrap div {
+  font-family: secondary-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #382513;
+  margin-right: 4px;
+}
+
+.cart__info-wrap p {
+  font-family: secondary-font;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #382513;
+}
+
+.cart__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px dashed #7C644D;
+  padding: 33px 0;
+}
+
+.cart__foto {
+  width: 100%;
+  max-width: 165px;
+  margin-right: 31px;
+}
+
+.cart__title {
+  font-family: primary-font;
+  font-size: 22px;
+  line-height: 18px;
+  color: #382513;
+  margin-bottom: 3px;
+}
+
+.cart__item-wrap p {
+  font-family: primary-font;
+  font-size: 20px;
+  line-height: 22px;
+  color: #9C7044;
+  margin-bottom: 27px;
+}
+
+.cart__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.cart__nav p {
+  font-family: secondary-font;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #382513;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.cart__nav button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E9CBAF;
+  border-radius: 50%;
+  width: 29px;
+  height: 29px;
+  margin-right: 9px;
+  cursor: pointer;
+}
+
+.cart__nav button:nth-of-type(2) {
+  padding-bottom: 5px;
+}
+
+.cart__nav button:last-child {
+  background: none;
+  border-radius: none;
+  margin-right: 0;
+  margin-left: 39px;
+}
+
+.cart__qty {
+  font-family: secondary-font;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #382513;
+  margin-right: 5px;
+}
+
+.cart__total {
+  border-top: 1px dashed #7C644D;
+  padding-top: 57px;
+  margin-bottom: 235px;
+}
+
+.cart__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cart__btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: secondary-font;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #382513;
+  border-radius: 9px;
+  width: 100%;
+  max-width: 253px;
+  height: 58px;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart__btn span {
+  width: 100%;
+  max-width: 253px;
+  height: 58px;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  background: #ffffff;
+  border: 1px solid #382513;
+  border-radius: 9px;
 }
 
 .product__inner {
