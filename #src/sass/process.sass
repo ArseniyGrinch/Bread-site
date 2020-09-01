@@ -10,17 +10,37 @@
    &__item
       display: flex
       align-items: center
-      &:nth-child(2)
-         display: flex
-         justify-content: flex-end
+
+      position: relative
       span
          font-family: secondary-font
          font-size: 18px
-         font-weight: 26px
+         font-weight: normal
+         line-height: 26px
          color: $primary-color
 
          max-width: 508px
          margin: 0 18px
          &:nth-child(1)
             text-align: right
-            
+      p
+         font-family: logo
+         font-size: 48px
+         line-height: 50px
+         color: $primary-color
+
+         position: absolute
+         left: -47px
+         top: 19px
+      &:nth-child(2)
+         display: flex
+         justify-content: flex-end
+         p
+            right: -47px
+            left: auto
+   &__line
+      position: absolute
+      top: 0
+      left: 50%
+      right: 50%
+      transform: translate(-50%, -50%)
