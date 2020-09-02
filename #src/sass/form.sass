@@ -1,0 +1,65 @@
+.form
+   &__inner
+      display: flex
+      flex-direction: column
+      align-items: center
+   &__content
+      display: flex
+      flex-direction: column
+
+      margin-top: 77px
+      margin-bottom: 88px
+
+      width: 100%
+      max-width: 710px
+      .form__wrap
+         &:nth-of-type(1)
+            input
+               max-width: 343px
+
+               margin-right: 25px
+               &:last-child
+                  margin-right: 0
+         &:nth-of-type(2)
+            input
+               max-width: 152px
+
+               margin-right: 34px
+               &:last-child
+                  margin-right: 0
+         &:nth-of-type(3)
+            input
+               width: auto
+      input, textarea
+         font-family: secondary-font
+         font-size: 20px
+         font-weight: normal
+         line-height: 28px
+         color: #7C644D
+
+         background: #FFFFFF
+         border: 2px solid #E9CAAF
+         border-radius: 9px
+
+         width: 100%
+         margin-bottom: 20px
+         padding: 11px 16px
+         padding-right: 0
+         &:focus
+            outline: none
+            border: 2px solid #382513
+
+            transition: .2s
+      textarea
+         max-height: 149px
+         resize: none
+   &__wrap
+      display: flex
+      label
+         font-family: secondary-font
+         font-size: 20px
+         font-weight: 500
+         line-height: 28px
+         color: $primary-color
+         &:first-child
+            margin-right: 74px
