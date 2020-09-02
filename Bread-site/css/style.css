@@ -62,6 +62,48 @@
   font-style: normal;
 }
 
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: secondary-font;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #382513;
+  border-radius: 9px;
+  width: 100%;
+  height: 58px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn span {
+  width: 100%;
+  height: 58px;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  background: #ffffff;
+  border: 1px solid #382513;
+  border-radius: 9px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -300,9 +342,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
   padding-top: 69px;
 }
 
@@ -377,6 +420,14 @@ p {
 .process__content {
   width: 100%;
   margin-top: 131px;
+}
+
+.process__content .process__item:nth-of-type(1) span {
+  margin-bottom: 110px;
+}
+
+.process__content .process__item:nth-of-type(3) span {
+  margin-top: 110px;
 }
 
 .process__item {
@@ -661,6 +712,20 @@ p {
           transition-delay: .09s;
 }
 
+.product__button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product__button a {
+  max-width: 219px;
+}
+
+.product__button span {
+  max-width: 219px;
+}
+
 .info {
   margin-top: 158px;
 }
@@ -731,6 +796,14 @@ p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.info__btn a {
+  max-width: 266px;
+}
+
+.info__btn span {
+  max-width: 266px;
 }
 
 .time {
@@ -1124,6 +1197,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .cart__btn a {
@@ -1144,7 +1218,7 @@ p {
   background-color: #382513;
   border-radius: 9px;
   width: 100%;
-  max-width: 253px;
+  max-width: 307px;
   height: 58px;
   position: relative;
   cursor: pointer;
@@ -1152,7 +1226,7 @@ p {
 
 .cart__btn span {
   width: 100%;
-  max-width: 253px;
+  max-width: 307px;
   height: 58px;
   position: absolute;
   bottom: -5px;
