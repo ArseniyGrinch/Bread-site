@@ -6,9 +6,13 @@
    height: 744px
    &__inner
       display: flex
-      position: relative
+      align-items: center
+   &__content
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
 
-      margin-top: 122px
+      width: 50%
    &__title
       font-family: logo
       font-weight: normal
@@ -26,34 +30,14 @@
 
       margin-bottom: 48px
    &__btn
-      font-family: secondary-font
-      font-weight: 500
-      line-height: 32px
-      font-size: 26px
-      color: $white
-
-      background-color: $primary-color
-      border-radius: 9px
-      position: relative
-
-      padding: 20px 73px
-      cursor: pointer
-      div
-         width: 263px
-         height: 72px
-
-         position: absolute
-         bottom: -6px
-         right: -6px
-         z-index: -1
-
-         background: $white
-         border: 1px solid $primary-color
-         border-radius: 9px
-   &__item
-      position: absolute
-      right: -40px
-      top: -60px
+      max-width: 266px
+      a
+         font-size: 24px
+         line-height: 32px
+   &__foto
+      width: 50%
+      margin-top: 62px
+      padding-left: 100px
 
 .intro-out
    &__inner

@@ -1,0 +1,520 @@
+@media screen and ( max-width: 1270px )
+   /** intro **/
+   .intro
+      &__foto
+         width: 38%
+         padding-left: 0
+         img
+            width: 490px
+      &__content
+         br
+            display: none
+   /** process **/
+   .process
+      &__content
+         .process__item
+            &:nth-of-type(1)
+               .process__wrap
+                  position: relative
+            &:nth-of-type(2)
+               .process__foto
+                  margin-left: 0
+                  width: 100%
+               .process__wrap
+                  position: relative
+            &:nth-of-type(3)
+               .process__wrap
+                  position: relative
+   /** product **/
+   .product
+      &__nav
+         flex-wrap: wrap
+      &__content
+         justify-content: center
+      &__item
+         width: 33.3333%
+         max-width: auto
+         &:first-child
+            margin-left: 23px
+         &:nth-child(4n+4)
+            margin-right: 23px
+         &:nth-child(6n+5)
+            margin-left: 23px
+   /** info **/
+   .info
+      margin-top: 90px
+      &__content
+         flex-direction: column
+         align-items: center
+      &__foto
+         display: flex
+         justify-content: center
+         margin-top: 90px
+         img
+            max-width: 450px
+      &__foto-background
+         top: 140px
+         left: 50%
+         right: 50%
+         transform: translate(-50%, -50%)
+      &__btn
+         justify-content: center
+
+@media screen and ( max-width: 997px )
+   /** header **/
+   .header
+      &__nav
+         align-items: start
+
+         margin-top: 10px
+         nav
+            display: none
+      &__menu-burger
+         display: flex
+   /** intro **/
+   .intro
+      &__inner
+         flex-direction: column
+      &__content
+         align-items: center
+         width: 100%
+         .info__btn
+            justify-content: center
+      &__title
+         font-size: 42px
+         line-height: 46px
+         text-align: center
+   
+         margin-top: 56px
+         margin-bottom: 13px
+      &__subtitle
+         font-size: 22px
+         line-height: 26px
+
+         margin-bottom: 30px
+         max-width: 710px
+         text-align: center
+      &__foto
+         display: flex
+         justify-content: center
+
+         width: 100%
+         margin-top: 20px
+         img
+            width: 100%
+            max-width: 281px
+
+            text-align: center
+   /** about **/
+   .about
+      &__foto
+         margin-bottom: 36px
+      &__wrap
+         flex-direction: column
+         align-items: center
+      &__item
+         width: 33.3333%   
+
+         margin-bottom: 25px
+      &__content-wrap
+         justify-content: start
+         flex-wrap: wrap
+
+         margin-top: 24px
+   /** process **/
+   .process
+      &__item
+         flex-direction: column
+      &__content
+         padding: 0 30px
+         .process__item
+            &:nth-of-type(1)
+               .process__wrap
+                  right: 0
+            &:nth-of-type(2)
+               flex-direction: column-reverse
+               .process__wrap
+                  left: 0
+            &:nth-of-type(3)
+               .process__wrap
+                  right: 0
+      &__line
+         display: none
+      &__foto
+         display: flex
+         justify-content: center
+         width: 100%
+         magin: 0
+      &__wrap
+         max-width: 100%
+         margin-top: 72px
+         p
+            font-size: 38px
+   /** product **/
+   .product
+      &__item
+         width: 50%
+         max-width: auto
+
+         margin: 0 16px
+         &:first-child
+            margin: 0 16px
+         &:nth-child(4n+4)
+            margin: 0
+         &:nth-child(6n+5)
+            margin: 0
+         &:nth-child(2n+2)
+            margin: 0 16px
+         &:nth-child(3n+2) 
+            margin: 0 16px
+   /** time **/
+   .time
+      &__wrap
+         p
+            font-size: 20px
+            white-space: nowrap
+      &__item
+         p, span
+            font-size: 16px
+            white-space: nowrap
+   /** footer **/
+   .footer
+      &__nav
+         margin-right: 130px
+   /** button **/
+   .btn
+      a
+         font-size: 18px
+         line-height: 24px
+
+@media screen and ( max-width: 684px )
+   /** product **/
+   .product
+      &__item
+         width: 50%
+         max-width: auto
+
+         margin: 0 8px
+         &:first-child
+            margin: 0 8px
+         &:nth-child(4n+4)
+            margin: 0
+         &:nth-child(6n+5)
+            margin: 0
+         &:nth-child(2n+2)
+            margin: 0 8px
+         &:nth-child(3n+2)
+            margin: 0 8px
+   /** time **/
+   .time
+      margin-top: 0
+      &__title
+         font-size: 22px
+         line-height: 32px
+         text-align: center
+      &__content
+         margin-top: 36px
+         padding-bottom: 74px
+      &__wrap
+         justify-content: center
+         margin-top: 15px
+         padding-left: 0
+         p
+            margin-bottom: 25px
+            padding-right: 25px
+            &:nth-of-type(2)
+               display: none
+            &:nth-of-type(3)
+               display: none
+      &__line
+         display: none
+      &__item-wrap
+         flex-direction: column
+         align-items: center
+      &__item
+         flex-direction: column
+         align-items: center
+         border-bottom: 1px solid #B08E6E
+         padding: 25px 0
+         width: 100%
+         p, span
+            font-size: 16px
+            line-height: 17px
+            margin-bottom: 15px
+
+            width: 100%
+         span
+            &:nth-of-type(2)
+               text-align: center
+      &__background
+         picture
+            &:nth-of-type(1)
+               right: -80px
+               top: auto
+               bottom: -100px
+               img
+                  max-width: 290px
+            &:nth-of-type(2)
+               left: -70px
+               bottom: -70px
+               img
+                  width: 100%
+                  max-width: 223px
+
+                  transform: rotate(15deg)
+   /** footer **/
+   .footer
+      &__inner
+         flex-direction: column
+         align-items: center
+      &__logo
+         margin-bottom: 47px
+      &__nav
+         flex-direction: row
+         justify-content: start
+
+         margin: 0
+         margin-bottom: 18px
+         max-width: 320px
+
+         padding-bottom: 49px
+         border-bottom: 1px solid #FFFFFF
+         div
+            &:nth-of-type(1)
+               margin-right: 43px
+      &__out
+         margin-bottom: 79px
+      &__social
+         display: flex
+         justify-content: center
+         picture
+            img
+               width: 44px
+               height: 44px
+
+@media screen and ( max-width: 576px )
+   /** header **/
+   .header
+      &__cart
+         background: url(../img/header/cart-mobile.svg)
+
+         width: 38px
+         height: 32px
+         div
+            left: 8px
+   /** intro **/
+   .intro
+      background: url(../img/intro/background-mobile.jpg)
+      height: 803px
+      &__title
+         font-size: 34px
+      &__subtitle
+         font-size: 16px
+         text-align: center
+      &__foto
+         img
+            max-width: 281px
+      &__btn
+         max-width: 169px
+   /** about **/
+   .about
+      margin-top: 44px
+      margin-bottom: 40px
+      &__inner
+         padding-top: 18px
+         padding-bottom: 52px
+      &__wrap
+         .product__title
+            font-size: 28px
+            line-height: 30px
+
+            margin-bottom: 23px
+         span
+            font-size: 14px
+            line-height: 24px
+      &__content
+         width: 100%
+
+         margin-left: 0
+      &__foto
+         width: 100%
+      &__content-wrap
+         width: 100%
+      &__item
+         width: 50%
+   /** process **/
+   .process
+      margin-bottom: 52px
+      .product__title
+         font-size: 28px
+         line-height: 36px
+      &__foto-item
+         width: 100%
+         max-width: 320px
+      &__content
+         margin-top: 56px
+         padding: 0
+         .process__foto
+            &:nth-of-type(1)
+               margin-right: 0
+         .process__item
+            .process__line-mobile
+               position: absolute
+               z-index: 1
+               display: block
+            &:nth-of-type(1)
+               .process__line-mobile
+                  right: -250px
+                  top: 120px
+            &:nth-of-type(2)
+               .process__line-mobile
+                  left: -210px
+            &:nth-of-type(3)
+               .process__line-mobile
+                  right: -200px
+                  bottom: 320px
+      &__wrap
+         margin-top: 32px
+         p
+            font-size: 30px
+            line-height: 32px
+
+            margin-bottom: 6px
+         span
+            font-size: 14px
+            line-height: 24px
+      &__item
+         margin: 0
+         margin-bottom: 61px
+         overflow-x: hidden
+         &:nth-of-type(2)
+            margin-bottom: 61px
+   /** product **/
+   .product
+      &__item
+         width: 45%
+         max-width: 100%
+         min-height: auto
+
+         margin: 0
+         &:first-child
+            margin: 0
+            margin-right: 8px
+         &:nth-child(odd)
+            margin: 0
+            margin-right: 8px
+         &:nth-child(even)
+            margin: 0
+            margin-left: 8px
+      &__item-wrap
+         &:hover
+            .product__item-active
+               margin-top: auto
+               opacity: 1
+               transition-all: 0
+      &__title
+         font-size: 28px
+         line-height: 36px
+      &__nav
+         justify-content: space-around
+         margin-top: 26px
+      &__btn
+         font-size: 18px
+         line-height: 16px
+
+         width: calc( 33.3333% - 8px )
+         height: 39px
+
+         padding: 0 10px
+         margin: 0
+         margin-top: 8px
+      &__content
+         margin-top: 47px
+         padding: 0
+         padding-bottom: 29px
+         padding-top: 26px
+      &__item-active
+         position: relative
+      &__cart-wrap
+         display: none
+      &__text
+         margin-top: 12px
+         margin-bottom: 7px
+         h4
+            font-size: 18px
+            line-height: 22px
+
+            max-width: 118px
+         span
+            display: none
+      &__price
+         font-size: 30px
+         line-height: 38px
+   /** info **/
+   .info
+      margin-top: 83px
+      margin-bottom: 90px
+      position: relative
+      overflow: hidden
+      .product__title
+         font-size: 28px
+         line-height: 38px
+         max-width: 222px
+         text-align: center
+      &__content
+         position: static
+         padding-top: 56px
+         margin-top: 0
+      &__text
+         h6
+            font-size: 18px
+            line-height: 30px
+
+            margin-bottom: 23px
+         span
+            font-size: 42px
+            line-height: 38px
+         p
+            font-size: 14px
+            line-height: 24px
+
+            margin-top: 27px
+            margin-bottom: 35px
+      &__foto
+         margin-top: 65px
+         img
+            width: 100%
+            max-width: 380px
+      &__foto-background
+         width: auto
+         min-width: 550px
+
+         top: 270px
+      &__btn
+         a
+            max-width: 169px
+         span
+            max-width: 169px
+   /** footer **/
+   .footer
+      padding-bottom: 27px
+      &__logo
+         span
+            font-size: 12px
+            line-height: 20px
+
+            margin-top: 10px
+      &__nav
+         a
+            margin-bottom: 14px
+      &__city
+         span
+            font-size: 18px
+            line-height: 21px
+      &__out
+         span
+            font-size: 14px
+            line-height: 19px
+         p
+            font-size: 28px
+            line-height: 31px

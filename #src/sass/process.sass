@@ -9,26 +9,46 @@
       margin-top: 82px
       .process__item
          &:nth-of-type(1)
+            .process__wrap
+               position: absolute
+               right: 9%
+
+               width: 590px
             span
                margin-bottom: 110px
+         &:nth-of-type(2)
+            .process__foto
+               width: 50%
+            .process__wrap
+               position: absolute
+               left: 10%
+               max-width: 509px
+
+               text-align: end
          &:nth-of-type(3)
+            .process__wrap
+               position: absolute
+               right: 8%
+
+               width: 590px
             span
                margin-top: 110px
    &__line
       position: absolute
-      top: -40px
+      top: 0
       left: 50%
       right: 50%
       transform: translate(-50%, -50%)
+      z-index: -1
    &__item
       display: flex
       align-items: center
 
       position: relative
-      margin-bottom: 105px
+      margin-bottom: 56px
       span
          font-family: secondary-font
-         font-size: 18px
+         font-size: 16px
          font-weight: normal
          line-height: 26px
          color: $primary-color
@@ -55,28 +75,13 @@
             max-width: 509px
          .process__foto
             margin-left: 45px
-         .process__foto-background
-            left: -140px
-            top: -30px
       &:nth-of-type(3)
          margin-bottom: 0
          .process__foto
             margin-right: 30px
-         .process__foto-background
-            left: 50px
-            top: -50px
          .process__line
-            top: -100px
+            top: -70px
             left: 49.5%
             right: 50.5%
-   &__foto
-      position: relative
-   &__foto-background
-      position: absolute
-      left: 0
-      top: 0
-      z-index: -1
-   &__wrap
-      max-width: 509px
-
-      text-align: end
+   &__line-mobile
+      display: none

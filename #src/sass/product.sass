@@ -14,7 +14,7 @@
       justify-content: center
 
       width: 100%
-      margin-top: 89px
+      margin-top: 69px
    &__btn
       display: flex
       justify-content: center
@@ -33,6 +33,7 @@
       border-radius: 48px
 
       margin-right: 15px
+      margin-top: 20px
       cursor: pointer
       &:last-child
          margin-right: 0
@@ -40,27 +41,42 @@
       background: #DB8C3D
       box-shadow: 0px 4px 11px #C09F7F
       border: none
+   &__item
+      display: flex
+      flex-direction: column
+      align-items: start
+
+      width: 25%
+      max-width: 258px
+      height: 100%
+      min-height: 430px
+
+      margin: 0 23px
+      &:first-child
+         margin-left: 0
+      &:nth-child(4n+4)
+         margin-right: 0
+      &:nth-child(6n+5)
+         margin-left: 0
    &__content
+      display: flex
+      flex-wrap: wrap
       width: 100%
 
       padding-top: 44px
       margin: 57px
       background: url(../img/about/dashed.svg) top no-repeat, url(../img/about/dashed.svg) bottom no-repeat
       position: relative
-   &__wrap
-      display: flex
-   &__item
-      margin-right: 49px
-      height: 100%
-      min-height: 430px
-      &:last-child
-         margin-right: 0
+   &__item-wrap
+      position: relative
+
+      width: 100%
       &:hover
          .product__item-active
-            margin-top: -4%
+            margin-top: -25%
             opacity: .9
 
-            transition: .6s
+            transition-all: 1s
          .product__cart
             opacity: 1
             transition-property: all
@@ -75,10 +91,11 @@
    &__item-active
       position: absolute
       width: 100%
-      max-width: 258px
       height: 100%
       max-height: 190px
       transition: .6s
+
+      padding-right: 10px
 
       background-color: $white
    &__foto
@@ -149,7 +166,7 @@
 
          position: absolute
          bottom: -62px
-         right: -1px
+         right: -6px
          z-index: 1
 
          background: $white
