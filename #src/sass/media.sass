@@ -63,12 +63,42 @@
 @media screen and ( max-width: 997px )
    /** header **/
    .header
-      &__nav
+      &__content
          align-items: start
 
          margin-top: 10px
-         nav
-            display: none
+      &__nav
+         display: flex
+         flex-direction: column
+         align-items: center
+         position: fixed
+         top: 0
+         right: -100%
+         z-index: 10
+
+         width: 100%
+         height: 100%
+
+         padding-top: 91px
+
+         background: #FFFAF3
+         transition: 1s
+         a
+            margin-left: 0
+            margin-bottom: 28px
+            &:last-child
+               margin-right: 0
+      &__active
+         right: 0
+
+         transition: 1s
+      &__close
+         display: block
+         font-size: 42px
+
+         position: absolute
+         top: 16px
+         right: 16px
       &__menu-burger
          display: flex
    /** intro **/
@@ -145,6 +175,8 @@
          justify-content: center
          width: 100%
          magin: 0
+         img
+            width: 100%
       &__wrap
          max-width: 100%
          margin-top: 72px
@@ -181,11 +213,25 @@
    .footer
       &__nav
          margin-right: 130px
+   /** popup **/
+   .popup
+      &__inner
+         flex-direction: column
+         align-items: center
+      &__foto
+         display: flex
+         justify-content: center
+
+         margin-bottom: 30px
+         img
+            width: 100%
+            max-width: 420px
    /** button **/
    .btn
       a
          font-size: 18px
          line-height: 24px
+
 
 @media screen and ( max-width: 684px )
    /** product **/
@@ -291,6 +337,10 @@
             img
                width: 44px
                height: 44px
+   /** form **/
+   .form
+      .intro-out__pay
+         margin-bottom: 109px
 
 @media screen and ( max-width: 576px )
    /** header **/
@@ -300,6 +350,8 @@
 
          width: 38px
          height: 32px
+
+         margin-left: 0
          div
             left: 8px
    /** intro **/
@@ -316,6 +368,8 @@
             max-width: 281px
       &__btn
          max-width: 169px
+         a, span
+            height: 49px
    /** about **/
    .about
       margin-top: 44px
@@ -505,6 +559,8 @@
 
             margin-top: 10px
       &__nav
+         width: 100%
+         max-width: 280px
          a
             margin-bottom: 14px
       &__city
@@ -518,3 +574,264 @@
          p
             font-size: 28px
             line-height: 31px
+   /** cart **/
+   .cart
+      padding-top: 0
+      padding-bottom: 44px
+      &__info
+         margin: 0 15px
+         margin-bottom: 5px
+         padding: 0
+         p
+            font-size: 18px
+            line-height: 22px
+      &__check
+         padding-left: 16px
+         padding-right: 25px
+         div
+            font-size: 14px
+            line-height: 19px
+      &__info-wrap
+         div
+            font-size: 14px
+            line-height: 22px
+            
+            margin-right: 5px
+      &__close
+         font-size: 44px
+      &__check
+         margin-bottom: 23px
+      &__item
+         padding-top: 18px
+         padding-bottom: 11px
+         margin: 0 15px
+      &__item-wrap
+         width: 100%
+         padding-left: 7px
+      &__foto
+         margin-right: 0
+      &__title-wrap
+         display: flex
+         justify-content: space-between
+
+         margin-bottom: 19px
+         p
+            font-size: 18px
+            line-height: 22px
+
+            margin-bottom: 0
+      &__title
+         font-size: 18px
+         line-height: 24px
+      &__qty
+         white-space: nowrap
+         p
+            display: none
+         span
+            display: block
+      &__nav
+         margin-bottom: 50px
+         p
+            font-size: 18px
+            line-height: 22px
+
+            margin-right: 15px
+         button
+            margin-right: 3px
+            &:last-child
+               margin-left: 11px
+      &__price
+         display: flex
+         justify-content: flex-end
+
+         font-size: 28px
+      &__total
+         margin: 0 15px
+         margin-bottom: 40px
+         padding-top: 28px
+         div
+            font-size: 20px
+            line-height: 25px
+         p
+            font-size: 26px
+            line-height: 30px
+      &__btn
+         max-width: 168px
+
+         margin-bottom: 44px
+   /** popup **/
+   .popup
+      padding: 0
+      &__inner
+         padding: 65px 15px
+      &__foto
+         margin-bottom: 25px
+         height: auto
+         width: 100%
+         margin-right: 0
+         img
+            max-width: 440px
+      &__wrap
+         justify-content: space-between
+         margin-bottom: 9px
+      &__title
+         font-size: 20px
+         line-height: 36px
+
+         margin-right: 0
+      &__subtitle
+         font-size: 14px
+         line-height: 24px
+
+         margin-bottom: 12px
+      &__calories
+         font-size: 18px
+         line-height: 18px
+
+         padding-bottom: 10px
+      &__nav
+         margin-bottom: 32px
+         p
+            font-size: 18px
+            line-height: 25px
+
+            margin-right: 41px
+         .cart__qty
+            font-size: 18px
+            line-height: 25px
+            
+            margin-right: 14px
+         button
+            margin-right: 10px
+      &__price
+         font-size: 28px
+         line-height: 36px
+
+         margin-bottom: 34px
+      &__btn
+         justify-content: center
+         a
+            max-width: 183px
+   /** intro-out **/
+   .intro-out
+      &__stages
+         margin-top: 43px
+         margin-bottom: 37px
+      &__title
+         font-size: 28px
+         line-height: 38px
+
+         text-align: center
+      &__wrap
+         margin-top: 31px
+      &__total
+         align-items: center
+         padding-top: 27px
+         margin-top: 11px
+         img
+            width: 42px
+            height: 30px
+      &__cost
+         font-size: 16px
+         line-height: 22px
+
+         margin-left: 12px
+      &__price
+         font-size: 28px
+         line-height: 30px
+         white-space: nowrap
+      &__text
+         margin-top: 32px
+         margin-bottom: 53px
+         span
+            font-size: 14px
+            line-height: 22px
+            &:first-child
+               white-space: nowrap
+            &:last-child
+               font-size: 16px
+               margin-top: 5px
+      &__pay
+         margin-bottom: 94px
+      &__pay-wrap
+         span
+            font-size: 20px
+            line-height: 28px
+         p
+            font-size: 36px
+            line-height: 30px
+      &__btn
+         font-size: 22px
+         line-height: 30px
+
+         max-width: 250px
+         a, span
+            height: 68px
+      &__rec
+         margin-bottom: 44px
+      &__subtitle
+         text-align: center
+   /** form **/
+   .form
+      &__content
+         margin-top: 37px
+         margin-bottom: 78px
+         .form__wrap-tel
+            &:nth-of-type(1)
+               input
+                  max-width: 100%
+         .form__wrap-house
+            &:nth-of-type(2)
+               input
+                  max-width: 100%
+         input, label
+            font-size: 16px
+            line-height: 22px
+
+            padding-top: 14px
+            padding-bottom: 14px
+            padding-left: 13px
+         .form__label
+            font-size: 20px
+            line-height: 30px
+
+            padding-bottom: 5px
+      &__wrap-house
+         flex-wrap: wrap
+         div
+            display: flex
+
+            width: 100%
+            &:first-child
+               margin-right: 0
+      &__wrap-tel
+         flex-direction: column
+      &__input-house
+         width: 100%
+         max-width: 100%
+         &:first-child
+            margin-right: 11px
+      &__textarea
+         margin-top: 39px
+      &__wrap
+         flex-direction: column
+         flex-wrap: wrap
+      &__label
+         margin-bottom: 0
+         margin-left: 30px
+         &:last-child
+            margin-left: 30px
+         &::before
+            width: 30px
+            height: 30px
+
+            left: -25px
+            top: 13px
+   /** thanks **/
+   .thanks
+      margin-bottom: 118px
+      &__text
+         font-size: 18px
+         line-height: 26px
+
+         text-align: center

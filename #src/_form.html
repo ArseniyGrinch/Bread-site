@@ -10,21 +10,25 @@
          </div>
          <div class="intro-out__title">Куда доставить заказ?</div>
          <form class="form__content" action="">
-            <div class="form__wrap">
+            <div class="form__wrap-tel">
                <input id="formTel" type="tel" placeholder="+7(___)___-__-__">
                <input type="text" placeholder="Ваше имя">
             </div>
             <input type="text" placeholder="E-mail (для получения чека)">
             <input type="text" placeholder="Улица">
-            <div class="form__wrap">
-               <input type="text" placeholder="Дом">
-               <input type="text" placeholder="Квартира">
-               <input type="text" placeholder="Подъезд">
-               <input type="text" placeholder="Этаж">
+            <div class="form__wrap-house">
+               <div>
+                  <input class="form__input-house" type="text" placeholder="Дом">
+                  <input class="form__input-house" type="text" placeholder="Квартира">
+               </div>
+               <div>
+                  <input class="form__input-house" type="text" placeholder="Подъезд">
+                  <input class="form__input-house" type="text" placeholder="Этаж">
+               </div>
             </div>
             <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Ваш комметарий к заказу"></textarea>
             <div class="form__wrap">
-               <input class="form__input-radio" type="radio" id="online" name="cash">
+               <input class="form__input-radio" type="radio" id="online" name="cash" checked>
                <label class="form__label" for="online">Оплатить онлайн</label>
                <input class="form__input-radio" type="radio" id="offline" name="cash">
                <label class="form__label" class="form__label" for="offline">Оплатить наличными</label>

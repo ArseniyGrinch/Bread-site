@@ -1,4 +1,6 @@
 .popup
+   display: flex
+   justify-content: center
    &__inner
       display: flex
 
@@ -8,6 +10,11 @@
       padding-top: 73px
       padding-bottom: 53px
       padding-left: 36px
+
+      width: 100%
+      max-width: 1070px
+
+      position: relative
    &__foto
       width: 100%
       max-width: 524px
@@ -50,8 +57,7 @@
       line-height: 18px
       color: $primary-color
 
-      border-bottom: 2px dashed #7C644D
-
+      background: url(../img/about/dashed.svg) bottom no-repeat
       margin-bottom: 27px
       padding-bottom: 18px
    &__hidden
@@ -73,3 +79,10 @@
          max-width: 253px
       span
          max-width: 253px
+   &__close
+      position: absolute
+      right: 15px
+      top: 15px
+      z-index: 2
+
+      font-size: 36px
