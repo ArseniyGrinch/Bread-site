@@ -31,8 +31,11 @@
          font-weight: 500
          line-height: 19px
          color: $white
+         padding-bottom: 3px
 
-         margin-bottom: 22px
+         margin-bottom: 19px
+         &:hover
+            background: url(../img/header/hover-line.svg) bottom no-repeat
       div
          display: flex
          flex-direction: column
@@ -59,6 +62,12 @@
          line-height: 31px
 
          margin-top: 8px
-   &__social
-      a
-         margin-right: 27px
+   &__link
+      margin-right: 27px
+      svg
+         width: 32px
+         height: 32px
+         fill: #ffffff
+         &:hover
+            fill: #DB8C3D
+            transition: .2s

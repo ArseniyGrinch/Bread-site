@@ -1,5 +1,6 @@
 .btn
    display: flex
+   position: relative
 
    width: 100%
    a
@@ -16,12 +17,21 @@
       background-color: $primary-color
       border-radius: 9px
 
+      position: absolute
+      left: 0
+      top: 0
+
       width: 100%
       height: 58px
       
       position: relative
 
       cursor: pointer
+      &:hover
+         background: #E8AA6C
+         border: 1px solid #000000
+         color: #382513
+         transition: .2s
    span
       width: 100%
       height: 58px

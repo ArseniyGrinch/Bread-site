@@ -66,6 +66,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   width: 100%;
 }
 
@@ -86,10 +87,22 @@
   color: #ffffff;
   background-color: #382513;
   border-radius: 9px;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 58px;
   position: relative;
   cursor: pointer;
+}
+
+.btn a:hover {
+  background: #E8AA6C;
+  border: 1px solid #000000;
+  color: #382513;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 .btn span {
@@ -207,6 +220,7 @@ p {
   font-weight: 400;
   line-height: 26px;
   color: #382513;
+  padding-bottom: 3px;
   margin-left: 59px;
 }
 
@@ -216,6 +230,10 @@ p {
 
 .header__content a:last-child {
   margin-right: 0;
+}
+
+.header__content a:hover {
+  background: url(../img/header/hover-line.svg) bottom no-repeat;
 }
 
 .header__cart {
@@ -317,6 +335,8 @@ p {
   background-repeat: no-repeat;
   opacity: .99;
   height: 744px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .intro__inner {
@@ -447,10 +467,14 @@ p {
   margin-right: 0;
 }
 
-.intro-out__item-wrap {
-  display: flexe;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.intro-out__wrap .cart__price {
+  margin-left: auto;
+}
+
+.intro-out__info-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .intro-out__foto {
@@ -1057,8 +1081,17 @@ p {
           transition-delay: .12s;
 }
 
-.product__cart img {
-  margin-left: 3px;
+.product__cart svg {
+  width: 23px;
+  height: 20px;
+  fill: #ffffff;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.product__cart:hover {
+  background: #55402c;
+  border: 1px solid #000000;
 }
 
 .product__cart-wrap {
@@ -1391,7 +1424,12 @@ p {
   font-weight: 500;
   line-height: 19px;
   color: #ffffff;
-  margin-bottom: 22px;
+  padding-bottom: 3px;
+  margin-bottom: 19px;
+}
+
+.footer__nav a:hover {
+  background: url(../img/header/hover-line.svg) bottom no-repeat;
 }
 
 .footer__nav div {
@@ -1435,8 +1473,21 @@ p {
   margin-top: 8px;
 }
 
-.footer__social a {
+.footer__link {
   margin-right: 27px;
+}
+
+.footer__link svg {
+  width: 32px;
+  height: 32px;
+  fill: #ffffff;
+}
+
+.footer__link svg:hover {
+  fill: #DB8C3D;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 /** out-2.html **/
@@ -1565,6 +1616,7 @@ p {
   position: relative;
   margin-left: 44px;
   margin-bottom: 18px;
+  cursor: pointer;
 }
 
 .form__label:last-child {
@@ -1625,7 +1677,7 @@ p {
   width: 100%;
 }
 
-.plug img {
+.plug__foto {
   margin-left: 75px;
 }
 
@@ -1749,6 +1801,7 @@ p {
   right: 15px;
   top: 15px;
   z-index: 2;
+  cursor: pointer;
   font-size: 36px;
 }
 
@@ -1940,7 +1993,7 @@ p {
   background: none;
   border-radius: none;
   margin-right: 0;
-  margin-left: 39px;
+  margin-left: 30px;
 }
 
 .cart__qty {
@@ -2447,6 +2500,15 @@ p {
     max-width: 420px;
   }
 
+  /** plug **/
+
+  .plug__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   /** button **/
 
   .btn a {
@@ -2642,6 +2704,21 @@ p {
   .form .intro-out__pay {
     margin-bottom: 109px;
   }
+
+  /** plug **/
+
+  .plug {
+    margin-bottom: 58px;
+  }
+
+  .plug__foto {
+    margin-left: 0;
+  }
+
+  .plug__foto img {
+    width: 100%;
+    max-width: 420px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -2730,6 +2807,8 @@ p {
   /** process **/
 
   .process {
+    position: relative;
+    overflow-x: hidden;
     margin-bottom: 52px;
   }
 
@@ -2758,18 +2837,32 @@ p {
     display: block;
   }
 
+  .process__content .process__item:nth-of-type(1) .process__foto {
+    padding-right: 60px;
+  }
+
   .process__content .process__item:nth-of-type(1) .process__line-mobile {
-    right: -250px;
-    top: 120px;
+    right: -210px;
+    top: 210px;
+  }
+
+  .process__content .process__item:nth-of-type(2) {
+    padding-left: 60px;
   }
 
   .process__content .process__item:nth-of-type(2) .process__line-mobile {
-    left: -210px;
+    left: -155px;
+    top: 36%;
+  }
+
+  .process__content .process__item:nth-of-type(3) {
+    padding-right: 60px;
   }
 
   .process__content .process__item:nth-of-type(3) .process__line-mobile {
-    right: -200px;
-    bottom: 320px;
+    right: -120px;
+    top: auto;
+    bottom: 420px;
   }
 
   .process__wrap {
@@ -2790,7 +2883,7 @@ p {
   .process__item {
     margin: 0;
     margin-bottom: 61px;
-    overflow-x: hidden;
+    position: static;
   }
 
   .process__item:nth-of-type(2) {
@@ -3064,7 +3157,7 @@ p {
     white-space: nowrap;
   }
 
-  .cart__qty p {
+  .cart__qty div {
     display: none;
   }
 
@@ -3217,7 +3310,19 @@ p {
   }
 
   .intro-out__wrap {
+    position: relative;
     margin-top: 31px;
+  }
+
+  .intro-out__wrap .cart__price {
+    margin-top: auto;
+  }
+
+  .intro-out__wrap .cart__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .intro-out__total {
@@ -3402,12 +3507,14 @@ p {
 }
 @supports (-webkit-appearance:none){
 .header__logo{background:url(../img/header/background.svg)}
+.header__content a:hover{background:url(../img/header/hover-line.svg) bottom no-repeat}
 .header__cart{background:url(../img/header/cart.svg)}
 .intro{background:url(../img/intro/background.webp)}
 .intro-out__total{background:url(../img/about/dashed.svg) top no-repeat}
 .about__inner{background:url(../img/about/dashed.svg) top no-repeat, url(../img/about/dashed.svg) bottom no-repeat}
 .product__content{background:url(../img/about/dashed.svg) top no-repeat, url(../img/about/dashed.svg) bottom no-repeat}
 .time__background{background-image:url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: black; stroke-width: 1; stroke-dasharray: 5 5'/></svg>")}
+.footer__nav a:hover{background:url(../img/header/hover-line.svg) bottom no-repeat}
 .form__label::before{background:url(../img/form/circle.svg)}
 .form__input-radio:checked + .form__label::before{background:url(../img/form/circle-active.svg)}
 .popup__calories{background:url(../img/about/dashed.svg) bottom no-repeat}

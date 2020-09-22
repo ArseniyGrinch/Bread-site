@@ -226,6 +226,10 @@
          img
             width: 100%
             max-width: 420px
+   /** plug **/
+   .plug
+      &__inner
+         flex-direction: column
    /** button **/
    .btn
       a
@@ -341,6 +345,14 @@
    .form
       .intro-out__pay
          margin-bottom: 109px
+   /** plug **/
+   .plug
+      margin-bottom: 58px
+      &__foto
+         margin-left: 0
+         img
+            width: 100%
+            max-width: 420px
 
 @media screen and ( max-width: 576px )
    /** header **/
@@ -398,6 +410,8 @@
          width: 50%
    /** process **/
    .process
+      position: relative
+      overflow-x: hidden
       margin-bottom: 52px
       .product__title
          font-size: 28px
@@ -417,16 +431,22 @@
                z-index: 1
                display: block
             &:nth-of-type(1)
+               .process__foto
+                  padding-right: 60px
                .process__line-mobile
-                  right: -250px
-                  top: 120px
+                  right: -210px
+                  top: 210px
             &:nth-of-type(2)
+               padding-left: 60px
                .process__line-mobile
-                  left: -210px
+                  left: -155px
+                  top: 36%
             &:nth-of-type(3)
+               padding-right: 60px
                .process__line-mobile
-                  right: -200px
-                  bottom: 320px
+                  right: -120px
+                  top: auto
+                  bottom: 420px
       &__wrap
          margin-top: 32px
          p
@@ -440,7 +460,7 @@
       &__item
          margin: 0
          margin-bottom: 61px
-         overflow-x: hidden
+         position: static
          &:nth-of-type(2)
             margin-bottom: 61px
    /** product **/
@@ -625,7 +645,7 @@
          line-height: 24px
       &__qty
          white-space: nowrap
-         p
+         div
             display: none
          span
             display: block
@@ -723,7 +743,12 @@
 
          text-align: center
       &__wrap
+         position: relative
          margin-top: 31px
+         .cart__price
+            margin-top: auto
+         .cart__item
+            flex-direction: column
       &__total
          align-items: center
          padding-top: 27px
